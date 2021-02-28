@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="icon" href="check.webp">
+  </head>
+  <body>
+    <div class="container center" id="container">
+      <h1 class="center title">My TODO App</h1>
+     
+      <div class="flow-right controls">
+        <span>Item count: <span id="item-count">0</span></span>
+        <span>Unchecked count: <span id="unchecked-count">0</span></span>
+      </div>
+ 
+      <button class="button center" onClick="newTodo()">New TODO</button>
+      <input type="color" id="inputColor" class="inputColor" >
+      <ul id="todo-list" class="todo-list">
+        <h1 id="title">List</h1>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+.title {
+    z-index: -100;
+    border-bottom: 4px solid rgb(21, 137, 204);
+    background: rgb(21, 137, 204);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #212121;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 3.5em;
+    text-align: center;
+    cursor: default;
+    overflow: hidden;
+    font-weight: 900;
+
+}
+
+.flow-right {
+    display: flex;
+    justify-content: space-around;
+    background: #212121;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
+    padding: 10px;
+
+    cursor: default;
+
+    span{
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(1.1);
+
+        }
+    
+        
+    }
+
+    #item-count {
+        color: #d62727;
+
+    }
+
+    #unchecked-count {
+        color: rgb(53, 216, 44);
+    }
+}
+
+.bar-newTodo {
+    display: flex;
+    justify-content: center;
+    background: rgb(21, 137, 204);
+    padding: 10px;
+
+    button {
+        background: #212121;
+        width: 234px;
+        height: 30px;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        margin-right: 50px;
+        border: 2px solid rgb(220, 219, 219);
+        font-family: 'Montserrat', sans-serif;
+        transition: transform 0.3s ease, background 0.35s ease;
+
+        &:hover {
+            transform: scale(1.08);
+
+            background: #111111;
+        }
+
+    }
+
+    input {
+        cursor: pointer;
+        margin-left: 50px;
+        width: 234px;
+        height: 30px;
+        border: none;
+        outline: none;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.08);
+
+        }
+
+        &::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+
+        &::-webkit-color-swatch {
+            border: 2px solid #212121;
+        }
+
+        &::after {
+            content: "Cambiar color";
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-23px);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+
+        }
+    }
+}

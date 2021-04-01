@@ -2,23 +2,28 @@
 <html>
   <head>
     <title>TODO App</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="scss/style.min.css" />
     <link rel="icon" href="check.webp">
   </head>
   <body>
     <div class="container center" id="container">
-      <h1 class="center title">My TODO App</h1>
+      <h1 class="center title">MY TODO APP</h1>
      
       <div class="flow-right controls">
-        <span>Item count: <span id="item-count">0</span></span>
-        <span>Unchecked count: <span id="unchecked-count">0</span></span>
+        <span>Task: <span id="item-count">0</span></span>
+        <span>Done: <span id="unchecked-count">0</span></span>
       </div>
- 
+      <div class="bar-newTodo">
       <button class="button center" onClick="newTodo()">New TODO</button>
       <input type="color" id="inputColor" class="inputColor" >
-      <ul id="todo-list" class="todo-list">
-        <h1 id="title">List</h1>
-      </ul>
+      </div>
+      <div class="container-list">
+        <h1 id="title">TASK LIST</h1>
+        <ul id="todo-list" class="todo-list">
+         
+        </ul>
+      </div>
+      
     </div>
     <script src="./script.js"></script>
   </body>

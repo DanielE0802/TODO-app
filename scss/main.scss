@@ -1,0 +1,146 @@
+.container-list {
+    min-height: calc((100vh / 1) - 216px);
+    border-right: 20px solid #1589CC;
+    border-left: 20px solid #1589CC;
+    border-bottom: 20px solid #1589CC;
+    background: #212121;
+
+    h1 {
+        color: #fff;
+        display: block;
+        padding: 15px 25px;
+        cursor: default;
+        width: 90vw;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        
+    
+
+        li {
+            flex: 1;
+            list-style: none;
+            margin-right: 25px;
+            width: 80%;
+            min-width: 400px;
+
+            .tarjeta {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                margin-top: 25px;
+                margin-left: 25px;
+
+                textarea{
+                    background: transparent;
+                    border: 2px solid transparent;
+                    resize: none;
+                    padding: 5px;
+                    outline: none;
+                    color: #fff;
+                    
+                    
+                    &:focus{
+                        border: 2px solid #212121;
+                        
+                    }
+                    &::placeholder{
+                        color: rgb(213, 213, 213);
+                    }
+                }
+
+                div{
+                    display: flex;
+
+                }
+            }
+        }
+    }
+
+}
+
+.sinEscritura{
+    pointer-events: default;
+}
+
+.felicitacion{
+    background-color: #22d412;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    top: 225px;
+    margin-left: 50vw;
+    position: absolute;
+    opacity: .8;
+    width: 300px;
+    height: 80px;
+    transition: all 1s ease;
+    cursor: pointer;
+    animation: salida 1s both;
+}
+
+
+.div-aviso{
+    background-color: #da2c2c;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    top: 225px;
+    margin-left: 50vw;
+    position: absolute;
+    opacity: .8;
+    width: 300px;
+    height: 80px;
+    transition: all 1s ease;
+    cursor: pointer;
+    animation: salida 1s both;
+}
+
+.display-none{
+    height: 0px;
+    font-size: 0px;
+    padding: 0px;
+    transition: all 1s ease;
+    animation:salida2 1s both ease-in-out   ;
+}
+
+@keyframes salida {
+    0%{
+        width: 300px;
+    height: 0px;
+    font-size: 10px;
+    }
+   
+    
+    100%{
+        width: 300px;
+        height: 80px;
+        font-size: 20px;
+    }
+}
+
+@keyframes salida2 {
+    
+   
+    
+    0%{
+        width: 300px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+    50%{
+        font-size: 20px;
+    }
+
+    100%{
+        width: 300px;
+    height: 0px;
+    font-size: 0px;
+    }
+}
